@@ -3,7 +3,7 @@ import "./featured.css";
 
 const Featured = () => {
   const { data, loading, error } = useFetch(
-    "/hotels/countByCity?cities=Nagpur,Pune,Delhi"
+    "https://hotel-booking-obth.onrender.com/api/hotels/countByCity?cities=Nagpur,Pune,Delhi"
   );
 
   return (

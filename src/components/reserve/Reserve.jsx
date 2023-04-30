@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 const Reserve = ({ setOpen, hotelId }) => {
   const [selectedRooms, setSelectedRooms] = useState([]);
-  const { data, loading, error } = useFetch(`/hotels/room/${hotelId}`);
+  const { data, loading, error } = useFetch(`https://hotel-booking-obth.onrender.com/api/hotels/room/${hotelId}`);
   const { dates } = useContext(SearchContext);
   const [endDate, setEndDate] = useState(dates[0].endDate);
 

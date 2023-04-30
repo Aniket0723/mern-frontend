@@ -23,7 +23,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "/auth/register",
+        "https://hotel-booking-obth.onrender.com/api/auth/register",
         {
           username,
           email,
