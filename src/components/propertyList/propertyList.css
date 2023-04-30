@@ -1,0 +1,63 @@
+.pList{
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.pListItem{
+  flex:1;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 4px solid rgb(233, 224, 224);
+  padding: 6px;
+}
+
+.pListImg{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  background-color: #ddd; /* Add grey background */
+ 
+}
+
+
+.pListTitles>h1{
+  font-size: 18px;
+  color: #444;
+  text-transform: capitalize;
+}
+
+.pListTitles>h2{
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.loading-Img{
+  border-radius: 5px;
+  width: 100%;
+  height: 150px;
+  background-color: Grey;
+  animation: loading 2s forwards infinite alternate ;
+}
+@keyframes loading{
+  to{
+    opacity: 0.2;
+  }
+  
+}
+.pListTitles-loading{
+  background-color: Grey;
+  animation: text 2s forwards infinite alternate ;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+@keyframes text{
+  to{
+    opacity: 0.2;
+  }
+  
+}
